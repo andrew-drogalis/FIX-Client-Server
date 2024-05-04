@@ -28,10 +28,10 @@ This repository contains a .devcontainer directory. The .devcontainer has all th
 ## Building Executable
 
 ``` 
-$ cd server && mkdir build
+$ cd client && mkdir build
 $ cmake -S . -B build
 $ cmake --build build --target FIX-Client
-$ cd .. && cd client && mkdir build
+$ cd .. && cd server && mkdir build
 $ cmake -S . -B build
 $ cmake --build build --target FIX-Server
 ```

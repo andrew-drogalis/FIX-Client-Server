@@ -35,10 +35,11 @@ def process_html_and_save(name, html, processing_function):
 
 def process_btobits_url_fields_tag(parser):
     """
+    Custom HTML Parse for https://btobits.com/fixopaedia/fixdic44/fields_by_tag_.html
     Args:
-        parser (): 
+        parser (): A BeautifulSoup parser with the html loaded
 
-    Returns:/html/body/table[2]/tbody/tr[2]/td[1]
+    Returns: A dictionary with the message key and message name 
     """
     results_dictionary = {}
     string = parser.body.select_one("table:nth-of-type(2)").text
@@ -53,8 +54,9 @@ def process_btobits_url_fields_tag(parser):
 
 def process_btobits_url_message_types(parser):
     """
+    Custom HTML Parse for https://btobits.com/fixopaedia/fixdic44/tag_35_MsgType_.html
     Args:
-        parser (): A BeautifulSoup parser with the html laoded
+        parser (): A BeautifulSoup parser with the html loaded
 
     Returns: A dictionary with the message key and message name 
     """

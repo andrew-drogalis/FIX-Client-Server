@@ -46,14 +46,14 @@ The **Financial Information eXchange** (**FIX**) protocol is an electronic commu
 
 Source: https://en.wikipedia.org/wiki/Financial_Information_eXchange
 
-The following is a diagram of the FIX protocol and its relationship with the other OSI (Open System Interconnection) layers.
+The following is a diagram of the FIX protocol and its relationship with the OSI (Open System Interconnection) model.
 
-<img src="https://raw.githubusercontent.com/andrew-drogalis/FIX-Protocol-TCP-Client/main/assets/FIX-Technical-Standard-Stack.png" alt="FIX Protocol OSI Model" style="width: 500px; padding-top: 10px;">
+<img src="https://raw.githubusercontent.com/andrew-drogalis/FIX-Protocol-TCP-Client/main/assets/FIX-Technical-Standard-Stack.png" alt="FIX Protocol OSI Model" style="width: 600px; padding-top: 10px;">
  
 Source: https://www.fixtrading.org/online-specification/introduction/
 
 
-<img src="https://raw.githubusercontent.com/andrew-drogalis/FIX-Protocol-TCP-Client/main/assets/fix-tcp.png" alt="FIX TCP Client Server" style="width: 500px; padding-top: 10px;">
+<img src="https://raw.githubusercontent.com/andrew-drogalis/FIX-Protocol-TCP-Client/main/assets/fix-tcp.jpg" alt="FIX TCP Client Server" style="width: 600px; padding-top: 10px;">
 
 Source: https://dataintellect.com/blog/kdb-fix-adapter/
 

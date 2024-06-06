@@ -8,6 +8,7 @@ project(
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_BUILD_TYPE "Debug")
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 include(GNUInstallDirs)
 
@@ -59,3 +60,5 @@ if(CMAKE_BUILD_TYPE STREQUAL "Debug")
     FALSE
     TRUE)
 endif()
+
+add_subdirectory(tcp-server)

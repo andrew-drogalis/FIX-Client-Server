@@ -3,7 +3,7 @@ from re import split
 from bs4 import BeautifulSoup
 import requests
 
-def save_json_file(name, data_dictionary):
+def save_json_file(name: str, data_dictionary: dict):
     """
     Args:
         name (): A string for the name / path of the json file 
@@ -12,7 +12,7 @@ def save_json_file(name, data_dictionary):
     with open(name, "w", encoding = "UTF-8") as json_file:
         json.dump(data_dictionary, json_file, indent = 4)
 
-def request_url_html(url):
+def request_url_html(url: str):
     """
     Args:
         url (): The url to fetch html document 
@@ -22,7 +22,7 @@ def request_url_html(url):
     response = requests.get(url)
     return response.text
 
-def process_html_and_save(name, html, processing_function):
+def process_html_and_save(name: str, html: str, processing_function):
     """
     Args:
         name (): A string for the name / path of the json file
@@ -33,7 +33,7 @@ def process_html_and_save(name, html, processing_function):
     results_dictionary = processing_function(parser)
     save_json_file(name, results_dictionary)
 
-def process_btobits_url_fields_tag(parser):
+def process_btobits_url_fields_tag(parser: BeautifulSoup):
     """
     Custom HTML Parse for https://btobits.com/fixopaedia/fixdic44/fields_by_tag_.html
     Args:
@@ -52,7 +52,7 @@ def process_btobits_url_fields_tag(parser):
 
     return results_dictionary
 
-def process_btobits_url_message_types(parser):
+def process_btobits_url_message_types(parser: BeautifulSoup):
     """
     Custom HTML Parse for https://btobits.com/fixopaedia/fixdic44/tag_35_MsgType_.html
     Args:

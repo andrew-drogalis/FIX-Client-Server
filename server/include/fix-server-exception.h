@@ -20,9 +20,9 @@ class FIXServerException : public std::runtime_error
 
     FIXServerException(std::string const& func_name, std::string const& message);
 
-    char const* what() const noexcept override;
+    [[nodiscard]] char const* what() const noexcept override;
 
-    char const* where() const noexcept;
+    [[nodiscard]] char const* where() const noexcept;
 };
 
 }// namespace fixserver

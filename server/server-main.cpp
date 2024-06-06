@@ -3,7 +3,7 @@
 
 #include <iostream>// for operator<<, basic_ostream, cout
 
-#include "tcp-server/include/main-utilities-server.hpp" for validateMainParameters
+#include "tcp-server/include/main-utilities-server.hpp" // for validateMainParameters
 #include "fix-server.h"             // for TCPServer
 
 int main(int argc, char* argv[])

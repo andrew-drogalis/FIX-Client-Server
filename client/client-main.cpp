@@ -4,8 +4,8 @@
 #include <iostream>// for operator<<, basic_ostream, cout
 #include <string>  // for basic_string
 
-#include "tcp-client/include/tcp-client.h" for validateMainParameters
-#include "tcp-client/include/main-utilities-client.hpp" for TCPClient
+#include "tcp-client/include/tcp-client.h" // for validateMainParameters
+#include "tcp-client/include/main-utilities-client.hpp" // for TCPClient
 
 int main(int argc, char* argv[])
 {
